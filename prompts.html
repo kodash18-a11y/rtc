@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XI Alumni Executive — Промт-гайд</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .copy-btn {
+    position:absolute; top:.75rem; right:.75rem;
+    background:rgba(119,0,255,.25); border:none; color:var(--violet);
+    font-size:.65rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; padding:.3rem .7rem; border-radius:4px;
+    cursor:pointer; transition:background .2s;
+  }
+  .copy-btn:hover { background:rgba(119,0,255,.45); }
+  .prompt-box { position:relative; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html">XI</a>
+    <div class="nav__links">
+      <a class="nav__link" href="index.html">Концепция</a>
+      <a class="nav__link" href="design.html">Дизайн-гайдлайн</a>
+      <a class="nav__link" href="communications.html">Коммуникационные шаблоны</a>
+      <a class="nav__link active" href="prompts.html">Промт-гайд</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrapper">
+    <p class="hero__label">Части IV–V · Промт-гайд и мастер-промт</p>
+    <div class="hero__xi">XI</div>
+    <p class="hero__subtitle">Prompt Book · NanaBanana 2 · Alumni Executive Club</p>
+  </div>
+</section>
+
+<main>
+
+  <!-- ПРАВИЛО ГЕНЕРАЦИИ -->
+  <section class="section">
+    <div class="wrapper">
+      <div class="card--warning" style="margin-bottom:3rem;">
+        <p style="font-weight:700;color:var(--orange);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.5rem;">⚠️ Обязательное правило генерации для всех образов</p>
+        <p style="margin:0;font-size:.9rem;">В каждом образе акцидентные цвета фиолетовый (#7700FF) и оранжевый (#FF4F12) должны быть зашиты в композицию — даже при преимущественно монохромной гамме. Violet: доминирует (свечение, отблеск, деталь). Orange: не более 10–15% кадра (точечный акцент, блик, разделитель). Фон всегда тёмный. Никакой военной символики, оружия, флагов, кораблей военно-морского флота.</p>
+      </div>
+
+      <!-- PROMPTS FOR 4 IMAGES -->
+      <h2>Промты на четыре образа</h2>
+
+      <div class="prompt-box" id="pb-01">
+        <div class="prompt-box__label">PROMPT 01 · ICEBREAKER / FLOTILLA · NanaBanana 2 · EN only</div>
+        <div class="prompt-box__body" id="pt-01">Abstract dark industrial composition. NO ship, NO vessel, NO military imagery.
+
+Core element: a sharp angular wedge form (12–15 degree cutting angle)
+slicing through a dark matte surface — like the bow geometry of an icebreaker,
+abstracted into pure form.
+
+Material: brushed dark steel or polished anthracite. Matte finish.
+
+Light: single cold directional source, side angle, creates deep relief shadows.
+
+Colors: background #0A0A0A, violet #7700FF as thin cold light leaking
+through the cut — precise, electric. Orange #FF4F12 as a single
+narrow streak at the tip of the wedge — max 10% of frame.
+
+No warm tones. No water literally. No neon effects.
+
+Mood: strategic calm, unstoppable force, systemic power, engineering precision.
+
+Style reference: dark fine-art industrial photography meets engineering diagram.
+
+Prohibited: no ships, no military vessels, no flags, no weapons,
+no warm colors, no people, no text, no logos, no decorative elements.
+
+Aspect ratio: 16:9 or 1:1. High resolution. Matte surface, no gloss.</div>
+        <button class="copy-btn" onclick="copyPrompt('pt-01',this)">Копировать</button>
+      </div>
+
+      <div class="prompt-box" id="pb-02">
+        <div class="prompt-box__label">PROMPT 02 · NORTH / ICE / UNSINKABLE · NanaBanana 2 · EN only</div>
+        <div class="prompt-box__body" id="pt-02">Abstract monochrome arctic texture composition.
+
+Scene option A: extreme close-up of dense multi-year ice surface —
+structural crack patterns, compressed layers visible, geological solidity.
+
+Scene option B: cold polar horizon — dark water, silver-grey sky, no sun warmth.
+
+Material: ice as a load-bearing structure — not fragile, ancient and dense.
+
+Light: diffused polar light, no directional shadows, silver-steel palette.
+
+Colors: monochrome dominant (#0A0A0A, #2A2A2A, #AAAAAA).
+
+Violet #7700FF as a faint deep reflection within the ice layers.
+
+Orange #FF4F12 as a minimal cold glint at one edge — max 8% of frame.
+
+Mood: endurance, discipline, silent power, unsinkable force.
+
+Style reference: arctic documentary photography, scientific expedition aesthetic.
+
+Prohibited: no warm tones, no sunlight warmth, no gloss, no people,
+no polar bears or animals, no text, no logos, no decorative elements.
+
+Aspect ratio: 16:9 or 3:4. Matte finish.</div>
+        <button class="copy-btn" onclick="copyPrompt('pt-02',this)">Копировать</button>
+      </div>
+
+      <div class="prompt-box" id="pb-03">
+        <div class="prompt-box__label">PROMPT 03 · WIRES / CABLES / NETWORKS · NanaBanana 2 · EN only</div>
+        <div class="prompt-box__body" id="pt-03">Dark industrial composition: a dense, massive bundle of cables and wires.
+
+CRITICAL: many wires — not one cable, not a detail — a thick, heavy,
+industrial bundle of dozens of cables running together. Dense, saturated,
+filling the frame with the weight of infrastructure.
+
+Material: insulated industrial cables, rubber or plastic coating, worn surface.
+
+Composition: the bundle runs diagonally or slightly curved across the frame.
+Close-up or medium close-up — cables fill 60–70% of the frame.
+
+Light: single cold industrial light source. Deep shadows between cable layers.
+
+Colors: dark base #0A0A0A. The cable bundle: near-black or very dark grey.
+Violet #7700FF: thin electric glow along one cable edge or between layers.
+Orange #FF4F12: a single cable or detail highlighted — max 10–15% of frame.
+
+Mood: infrastructure as evidence of massive work done, quiet industrial pride,
+belonging through physical trace.
+
+Style: macro industrial photography, documentary infrastructure aesthetic.
+
+Prohibited: no digital network diagrams, no topology lines, no abstract patterns,
+no single wire, no warm colors, no people, no text, no logos.
+
+Aspect ratio: 1:1. Matte surface.</div>
+        <button class="copy-btn" onclick="copyPrompt('pt-03',this)">Копировать</button>
+      </div>
+
+      <div class="prompt-box" id="pb-04">
+        <div class="prompt-box__label">PROMPT 04 · METAL / REBAR / STRUCTURE · NanaBanana 2 · EN only</div>
+        <div class="prompt-box__body" id="pt-04">Macro industrial texture — dark metal as the main subject.
+
+Scene option A: brushed dark steel surface — fine directional grain visible,
+matte finish, not reflective.
+
+Scene option B: rebar or structural metal — raw, industrial, load-bearing.
+
+Close-up: texture fills the frame, structural quality is the only message.
+
+Material: anthracite steel, cast iron, or reinforced concrete rebar.
+Matte surface — no gloss, no mirror reflections, no polished chrome.
+
+Light: single directional hard light, raking across the surface to reveal texture.
+Creates deep shadows in grooves and grain — maximum relief.
+
+Colors: monochrome dominant (#0A0A0A, #2A2A2A, #555555).
+Violet #7700FF: thin spectral light in a groove or edge detail.
+Orange #FF4F12: a single warm metal highlight at one point — max 8% of frame.
+
+Mood: engineering dignity, institutional authority, strength without ornament.
+
+Style reference: industrial macro photography, architectural detail photography.
+
+Prohibited: no gold, no copper, no warm metals, no gloss, no mirror surfaces,
+no decorative metalwork, no jewelry, no people, no text, no logos.
+
+Aspect ratio: 1:1. High detail, matte finish.</div>
+        <button class="copy-btn" onclick="copyPrompt('pt-04',this)">Копировать</button>
+      </div>
+
+      <div class="divider" style="margin:3rem 0;"></div>
+
+      <!-- MASTER PROMPT -->
+      <h2>Мастер-промт и иерархия</h2>
+      <p>Система иерархическая. Мастер-промт — постоянная база, описывает всю идентику. Add-on промты раскрывают конкретный формат. Всегда подключаются к мастер-промту. Все промты на латинице. Инструмент: NanaBanana 2.</p>
+
+      <div class="hier-box">
+        <h4>Иерархия</h4>
+        <p>1. Вставить МАСТЕР-ПРОМТ в начало сессии NanaBanana 2 (один раз) → 2. Добавить ADD-ON для нужного формата → 3. Заполнить поля [IN BRACKETS] — зоны ручного ввода</p>
+      </div>
+
+      <div class="prompt-box">
+        <div class="prompt-box__label">MASTER PROMPT · XI Alumni Executive Club · Rostelecom · NanaBanana 2</div>
+        <div class="prompt-box__body" id="pt-master">## VISUAL IDENTITY SYSTEM — XI Alumni Executive Club (Rostelecom)
+
+### BRAND ESSENCE
+Closed premium executive club for former top management of Rostelecom.
+Symbol XI (Roman numeral 11) = 11 time zones = scale of people who built
+and maintained Russia's digital infrastructure. Not marketing — heraldic.
+Name in Latin: Alumni Executive. Full name: Alumni Executive Club Rostelecom.
+
+### MANDATORY COLOR SYSTEM
+Background: #0A0A0A or #141414 (deep matte black)
+Accent 1 DOMINANT: Violet #7700FF — headlines, symbol, glowing details
+Accent 2 SECONDARY: Orange #FF4F12 — max 30% of violet usage per composition
+Supporting: monochrome only (#2A2A2A / #555555 / #AAAAAA / #FFFFFF)
+Gradient: #7700FF → #FF4F12 only for accent separators / active lines
+Rule: both violet AND orange must appear in every image composition.
+Additional colors: max 3% total in one layout.
+
+### STYLE RULES — MANDATORY
+NO classic illustrations, decorative patterns, friendly mascots
+NO warm color palettes, bright colors, corporate blue gradients
+NO stock business photography, NO smiling teams, NO motivational posters
+NO military imagery — NO warships, NO weapons, NO military vessels
+YES: icebreaker aesthetic is civilian/engineering/scientific — not military
+YES: typography carries meaning (large headline + small caption contrast)
+YES: industrial materials: steel, ice, cables, dark paper
+YES: generous negative space — luxury of emptiness
+YES: single directional light, industrial shadows, matte textures
+
+### FOUR IMAGE SYSTEM (abstract application, never literal)
+01 ICEBREAKER/FLOTILLA: angular wedge form, cutting geometry, directional force
+02 NORTH/ICE: monochrome arctic texture, dense ancient ice, silent endurance
+03 WIRES/CABLES: massive dense bundle of cables — many wires, not one detail
+04 METAL/REBAR: dark matte steel surface, structural material, texture as subject
+
+### TYPOGRAPHY BASE (Figma/design reference)
+Font system: Rostelecom brand fonts as base.
+Key contrast: large headline (meaning) + small caption (context).
+
+### BRAND TYPE
+XI = sub-brand of Rostelecom and HR brand.
+Public: XI mark without Rostelecom reference. Name: Alumni Executive (Latin).
+Internal: Alumni Executive Club Rostelecom / Liga XI.</div>
+        <button class="copy-btn" onclick="copyPrompt('pt-master',this)">Копировать</button>
+      </div>
+
+      <div class="divider" style="margin:3rem 0;"></div>
+
+      <!-- ADD-ONS -->
+      <h2>Add-on промты по форматам</h2>
+
+      <h3 style="margin-top:2rem;">4.2 ADD-ON: Telegram-пост квадрат 1:1</h3>
+      <div class="prompt-box">
+        <div class="prompt-box__label">ADD-ON · Telegram Square Post 1:1 · NanaBanana 2</div>
+        <div class="prompt-box__body" id="pt-tg1">[PASTE MASTER PROMPT ABOVE — required]
+
+FORMAT: square 1:1, 1080x1080px, Telegram channel post
+
+LAYOUT STRUCTURE:
+- Background: #0A0A0A
+- Top-left: XI mark, small, violet #7700FF (40–50px equivalent)
+- Bottom-right: "Rostelecom · Alumni" small grey text
+- Main zone (center): [CONTENT — see fill-in fields below]
+- Padding: 64px all sides. Text: left-aligned.
+- Max 2 typographic elements in frame.
+
+FILL IN MANUALLY:
+→ [HEADLINE] — large white bold text, max 6 words
+→ [SUBTEXT / CONTEXT] — medium grey, max 2 lines
+
+IMAGE LAYER — choose one:
+→ [IMAGE 01 ICEBREAKER] or [IMAGE 02 NORTH/ICE]
+   or [IMAGE 03 WIRES] or [IMAGE 04 METAL]
+
+PROHIBITED: no photos of people, no decorative borders,
+no gradient buttons, no warm colors, no text except specified fields.</div>
+        <button class="copy-btn" onclick="copyPrompt('pt-tg1',this)">Копировать</button>
+      </div>
+
+      <h3 style="margin-top:2rem;">4.3 ADD-ON: Telegram Stories вертикаль 9:16</h3>
+      <div class="prompt-box">
+        <div class="prompt-box__label">ADD-ON · Telegram Stories Vertical 9:16 · NanaBanana 2</div>
+        <div class="prompt-box__body" id="pt-tg2">[PASTE MASTER PROMPT ABOVE — required]
+
+FORMAT: vertical 9:16, 1080x1920px, Telegram Stories
+
+LAYOUT:
+- Safe zone: 150px top and bottom (UI elements overlap)
+- Background: #0A0A0A or photographic texture [choose image layer below]
+- XI mark: top-center, medium, faint violet glow
+- Main headline: center stage, bold white, max 5 words, oversized
+- Supporting text (optional): below headline, 1 line, grey
+- Bottom: event date/CTA or "Alumni Executive Club" signature
+
+FILL IN MANUALLY:
+→ [TYPE TAG] — МЕРОПРИЯТИЕ / ИНСАЙТ / КЕЙС / УЧАСТНИК
+→ [HEADLINE] — type here
+→ [DATE · TIME · FORMAT] — type here
+
+IMAGE LAYER — choose one:
+→ [IMAGE 01 ICEBREAKER] or [IMAGE 02 NORTH/ICE]
+   or [IMAGE 03 WIRES] or [IMAGE 04 METAL]
+
+PROHIBITED: no warm tones, no smiling faces, no HR illustrations.</div>
+        <button class="copy-btn" onclick="copyPrompt('pt-tg2',this)">Копировать</button>
+      </div>
+
+      <h3 style="margin-top:2rem;">4.4 ADD-ON: Карточка экспертного кейса</h3>
+      <div class="prompt-box">
+        <div class="prompt-box__label">ADD-ON · Expert Case Card · NanaBanana 2</div>
+        <div class="prompt-box__body" id="pt-case">[PASTE MASTER PROMPT ABOVE — required]
+
+PURPOSE: text-dominant card for case study or analytics post
+IMAGE LAYER: IMAGE 04 METAL — steel texture as background
+
+STRUCTURE:
+- Background: dark with subtle metal texture (image 04)
+- Left vertical accent line: violet #7700FF, 4px wide
+- Top-right: XI monogram, small, faint
+
+FILL IN MANUALLY:
+→ [NUMBER] — large hero metric, white or violet — fill manually
+→ [LABEL] — small uppercase grey: "ЧТО СДЕЛАЛИ" / "РЕЗУЛЬТАТ"
+→ [CASE DESCRIPTION] — 1–2 sentences — fill manually
+→ [OUTCOME] — key takeaway — fill manually
+
+Bottom line: "Экспертный разбор · Alumni XI" — small grey
+NOTE: typography + geometry only. No illustrative images.</div>
+        <button class="copy-btn" onclick="copyPrompt('pt-case',this)">Копировать</button>
+      </div>
+
+      <h3 style="margin-top:2rem;">4.5 ADD-ON: Досье-карточка участника</h3>
+      <div class="prompt-box">
+        <div class="prompt-box__label">ADD-ON · Member Dossier Card · NanaBanana 2</div>
+        <div class="prompt-box__body" id="pt-dossier">[PASTE MASTER PROMPT ABOVE — required]
+
+PURPOSE: member spotlight — dossier card logic
+IMAGE LAYER: IMAGE 03 WIRES — cable texture as background layer (subtle)
+
+STRUCTURE (two columns):
+- Left half: monochrome portrait photo zone (desaturated, high contrast)
+  If no photo: dark geometric element from image 04 metal
+- Right half: dark background #141414 + text zone
+
+FILL IN MANUALLY:
+→ [FULL NAME] — large white bold — fill manually
+→ [ROLE AT RTK · YEARS] — medium violet — fill manually
+→ [NOW: position/company] — small grey — fill manually
+→ [EXPERTISE: 2–3 directions] — bullet list grey — fill manually
+
+Bottom separator: thin orange line #FF4F12, full width
+Footer: XI mark + "Alumni Executive Club"
+
+STYLE: intelligence briefing meets premium membership card.
+No filters, no emojis, no casual design elements.</div>
+        <button class="copy-btn" onclick="copyPrompt('pt-dossier',this)">Копировать</button>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="footer__xi">XI</span>
+    <span class="footer__meta">Alumni Executive Club · Ростелеком<br>Visual Identity Guideline &amp; Prompt Book · v3.0 · Апрель 2026 · Конфиденциально</span>
+  </div>
+</footer>
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <span class="lightbox-close" id="lightbox-close">&#215;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+function copyPrompt(id, btn) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  navigator.clipboard.writeText(el.textContent.trim()).then(() => {
+    btn.textContent = 'Скопировано';
+    setTimeout(() => { btn.textContent = 'Копировать'; }, 2000);
+  });
+}
+</script>
+<script src="app.js"></script>
+</body>
+</html>

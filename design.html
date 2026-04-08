@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XI Alumni Executive — Дизайн-гайдлайн</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html">XI</a>
+    <div class="nav__links">
+      <a class="nav__link" href="index.html">Концепция</a>
+      <a class="nav__link active" href="design.html">Дизайн-гайдлайн</a>
+      <a class="nav__link" href="communications.html">Коммуникационные шаблоны</a>
+      <a class="nav__link" href="prompts.html">Промт-гайд</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrapper">
+    <p class="hero__label">Часть II · Визуальная система</p>
+    <div class="hero__xi">XI</div>
+    <p class="hero__subtitle">Дизайн-гайдлайн · Alumni Executive Club</p>
+  </div>
+</section>
+
+<main>
+
+  <!-- 2.1 ЦВЕТ -->
+  <section class="section">
+    <div class="wrapper">
+      <h2>2.1 Цветовая система</h2>
+      <p>Вся цветовая система XI строится на трёх цветах: тёмная база, фиолетовый акцент, оранжевый акцент. Все остальные цвета — монохром как поддерживающая среда.</p>
+
+      <!-- proportion bar -->
+      <div class="color-bar">
+        <div class="color-bar__seg color-bar__seg--dark">60% Dark base / text</div>
+        <div class="color-bar__seg color-bar__seg--violet">28% Violet accent 1</div>
+        <div class="color-bar__seg color-bar__seg--orange">9% Orange</div>
+        <div class="color-bar__seg color-bar__seg--mono">3%</div>
+      </div>
+
+      <div class="color-swatches" style="margin-bottom:1.5rem;">
+        <div class="swatch"><div class="swatch__dot" style="background:#0A0A0A;border:1px solid #333;"></div>#0A0A0A — Dark base</div>
+        <div class="swatch"><div class="swatch__dot" style="background:#7700FF;"></div>#7700FF — Violet</div>
+        <div class="swatch"><div class="swatch__dot" style="background:#FF4F12;"></div>#FF4F12 — Orange</div>
+        <div class="swatch"><div class="swatch__dot" style="background:#AAAAAA;"></div>Mono / #AAA / #FFF</div>
+      </div>
+
+      <p style="font-size:var(--cap-size);color:var(--grey-hi);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.5rem;">Фирменный градиент → #7700FF → #FF4F12 · только для акцентных элементов (линии, подчёркивания заголовков)</p>
+      <div class="grad-bar" style="height:14px;margin-bottom:2rem;"></div>
+
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Токен</th><th>HEX</th><th>Применение</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Dark Base</strong></td><td style="font-family:'Courier New',monospace;color:var(--violet);">#0A0A0A / #141414</td><td>Основной фон. 60% композиции. Физические артефакты. Большинство фонов цифровых носителей</td></tr>
+            <tr><td><strong>Violet · Accent 1</strong></td><td style="font-family:'Courier New',monospace;color:var(--violet);">#7700FF</td><td>Доминирующий акцент. Знак XI, заголовки, детали. ~28% акцентной зоны</td></tr>
+            <tr><td><strong>Orange · Accent 2</strong></td><td style="font-family:'Courier New',monospace;color:var(--violet);">#FF4F12</td><td>Второй акцент. CTA, метрики-якоря. Максимум 30% от violet в одном макете. ~9%</td></tr>
+            <tr><td><strong>Монохром</strong></td><td style="font-family:'Courier New',monospace;color:var(--violet);">#2A2A2A / #555 / #AAA / #FFF</td><td>Текстовые поверхности и поддерживающие блоки. Доп. цвета ≤ 3%</td></tr>
+            <tr><td><strong>Градиент</strong></td><td style="font-family:'Courier New',monospace;color:var(--violet);">#7700FF → #FF4F12</td><td>Только для акцентных элементов: разделители, активные индикаторы</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2.2 ТИПОГРАФИКА -->
+  <section class="section">
+    <div class="wrapper">
+      <h2>2.2 Типографика</h2>
+      <p>В основе системы — шрифтовая система Ростелекома. Она остаётся неизменной базой. Дифференциатором XI является акцидентная игра на контрасте размеров: крупный заголовок (смысл) + мелкая подпись (контекст). Это структура содержания, а не декор.</p>
+
+      <!-- visual demo -->
+      <div class="card" style="margin-bottom:2rem;">
+        <div style="font-size:clamp(2.5rem,8vw,5rem);font-weight:700;color:var(--violet);text-transform:uppercase;line-height:1;letter-spacing:-.02em;margin-bottom:.35rem;">Акцидентный заголовок</div>
+        <div style="font-size:var(--cap-size);color:var(--grey-hi);line-height:var(--cap-lh);letter-spacing:.06em;">Мелкая подпись / метка — контекст, дата, роль — пара к заголовку</div>
+      </div>
+
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Элемент</th><th>Правило</th></tr></thead>
+          <tbody>
+            <tr><td>Базовый шрифт</td><td>Шрифтовая система Ростелекома — остаётся неизменной</td></tr>
+            <tr><td>Акцидентный заголовок</td><td>48–96 pt эквивалент. Тёмный фон, белый или фиолетовый. Несёт смысл</td></tr>
+            <tr><td>Мелкая подпись / метка</td><td>8–11 pt. Серый #AAA. Контекст, дата, роль — пара к заголовку</td></tr>
+            <tr><td>Цитата / прямая речь</td><td>Крупные кавычки как самостоятельный формат. Тёмный фон → белый курсив</td></tr>
+            <tr><td>Цифра-якорь</td><td>Один крупный факт на блок. Violet или white. Максимально крупно</td></tr>
+            <tr><td>Запрет</td><td>Классические иллюстрации заменяются типографикой + фото + интеллект-графикой</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2.3 ГЕОМЕТРИЯ -->
+  <section class="section">
+    <div class="wrapper">
+      <h2>2.3 Геометрическая логика</h2>
+      <p>Геометрические правила XI выведены на основании брендбука Ростелекома и брендбука HR-бренда. Они развивают корпоративную систему в сторону премиальной executive-эстетики, не противореча базовым правилам родительского бренда.</p>
+
+      <div class="tbl-wrap" style="margin-bottom:2rem;">
+        <table>
+          <thead><tr><th>Элемент</th><th>Правило</th></tr></thead>
+          <tbody>
+            <tr><td>Радиусы скруглений</td><td>Смежные углы 1:2 (r и 2r). Для крупных элементов: r = 2X</td></tr>
+            <tr><td>«Клин» / wedge</td><td>12°-срез. Геометрия ледокола без изображения корабля. Метафора прорыва</td></tr>
+            <tr><td>Сетка</td><td>Строгая блочная. Большой воздух — «премиальная пустота»</td></tr>
+            <tr><td>Знак XI</td><td>На тёмном фоне. Белый или оранжевый. Работает без подписи</td></tr>
+            <tr><td>Основание</td><td>Брендбук Ростелекома + Брендбук HR-бренда РТК → адаптация в premium executive-регистр</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- visual radius demo -->
+      <div style="display:flex;gap:1.5rem;flex-wrap:wrap;align-items:flex-end;margin-bottom:2rem;">
+        <div style="width:80px;height:80px;background:var(--grey-lo);border-radius:8px 8px 16px 16px;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--grey-hi);text-align:center;line-height:1.3;">r=8<br>2r=16</div>
+        <div style="width:120px;height:80px;background:var(--grey-lo);border-radius:12px 12px 24px 24px;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--grey-hi);text-align:center;line-height:1.3;">r=12<br>2r=24</div>
+        <div style="width:200px;height:56px;background:var(--grey-lo);border-radius:8px 8px 16px 16px;display:flex;align-items:flex-end;overflow:hidden;position:relative;">
+          <div style="position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#7700FF,#FF4F12);"></div>
+          <span style="font-size:10px;color:var(--grey-hi);padding:.5rem .75rem;">Градиентная линия 4px</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2.4 ТИП БРЕНДА -->
+  <section class="section">
+    <div class="wrapper">
+      <h2>2.4 Тип бренда</h2>
+      <p>XI — суббренд Ростелекома и HR-бренда. Визуальное отличие от других alumni- и HR-суббрендов — осознанный сдвиг в сторону премиальной executive-эстетики.</p>
+
+      <div class="tbl-wrap" style="margin-bottom:2.5rem;">
+        <table>
+          <thead><tr><th>Бренд / суббренд</th><th>Визуальный регистр</th></tr></thead>
+          <tbody>
+            <tr><td>Ростелеком (корп.)</td><td>Корпоративный, технологичный, масштабный</td></tr>
+            <tr><td>HR-бренд РТК</td><td>Тёплый, мотивирующий, открытый — «Эффект бабочки»</td></tr>
+            <tr><td>Alumni (стандарт)</td><td>Сообщественный, ностальгический, среднетёплый</td></tr>
+            <tr><td><strong style="color:var(--violet);">XI Alumni Executive Club</strong></td><td><strong>Премиальный, тёмный, институциональный. Геральдика, не корпоративный PR</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Дизайн-исследование: 10 закрытых бизнес-клубов</h3>
+
+      <div class="stats-grid" style="margin-bottom:2rem;">
+        <div class="stat-card"><div class="stat-card__num">70%</div><div class="stat-card__label">используют тёмную цветовую эстетику как основной режим</div></div>
+        <div class="stat-card"><div class="stat-card__num">100%</div><div class="stat-card__label">выстраивают идентичность через типографику, не через иллюстративность</div></div>
+        <div class="stat-card"><div class="stat-card__num">80%</div><div class="stat-card__label">опираются на геральдический или орденский символ как якорный элемент</div></div>
+        <div class="stat-card"><div class="stat-card__num">90%</div><div class="stat-card__label">избегают тёплых «дружелюбных» цветовых схем в premium-сегменте</div></div>
+        <div class="stat-card"><div class="stat-card__num">60%</div><div class="stat-card__label">используют монохромный фотостиль или избегают людей на ключевых носителях</div></div>
+        <div class="stat-card"><div class="stat-card__num">100%</div><div class="stat-card__label">сохраняют строгую иерархию: один знак — один шрифт — одна пропорция</div></div>
+      </div>
+
+      <p style="margin-bottom:.5rem;font-size:var(--cap-size);color:var(--grey-hi);">Фотостиль: предпочтение фактурам (металл, камень, бумага) перед постановочной съёмкой</p>
+
+      <div class="card--warning">
+        <p style="margin:0;color:var(--violet);font-weight:500;">→ Вывод: тёмная доминанта + типографика + геральдический знак — индустриальный стандарт premium executive clubs.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="footer__xi">XI</span>
+    <span class="footer__meta">Alumni Executive Club · Ростелеком<br>Visual Identity Guideline &amp; Prompt Book · v3.0 · Апрель 2026 · Конфиденциально</span>
+  </div>
+</footer>
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <span class="lightbox-close" id="lightbox-close">&#215;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+function placeholderHTML(name) {
+  return `<div class="img-placeholder"><span class="img-placeholder__name">${name}</span><span class="img-placeholder__hint">./images/${name}.jpg</span></div>`;
+}
+function sliderPlaceholderHTML(name) {
+  return `<div class="slider__placeholder"><span class="img-placeholder__name">${name}</span><span class="img-placeholder__hint">./images/${name}.jpg</span></div>`;
+}
+</script>
+<script src="app.js"></script>
+</body>
+</html>

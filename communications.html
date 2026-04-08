@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XI Alumni Executive — Коммуникационные шаблоны</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .comm-row { display: grid; grid-template-columns: 1fr 1.1fr 1.5fr auto; gap: 0; }
+  @media(max-width:900px){ .comm-row { grid-template-columns:1fr; } }
+  .example-text { font-style:italic; font-size:.8rem; color:var(--grey-hi); line-height:1.5; }
+  .addon-tag { font-family:'Courier New',monospace; font-size:.7rem; color:var(--violet); background:rgba(119,0,255,.12); padding:.2rem .5rem; border-radius:3px; white-space:nowrap; }
+  .image-badge {
+    display:inline-flex; align-items:center; gap:.3rem;
+    font-size:.7rem; font-weight:700; letter-spacing:.05em;
+    padding:.25rem .6rem; border-radius:4px; text-transform:uppercase;
+  }
+  .badge-icebreaker { background:rgba(119,0,255,.15); color:var(--violet); }
+  .badge-ice        { background:rgba(100,140,255,.12); color:#99aaff; }
+  .badge-wires      { background:rgba(0,180,80,.1);    color:#66cc88; }
+  .badge-metal      { background:rgba(170,170,170,.12); color:var(--grey-hi); }
+  .badge-combo      { background:rgba(255,79,18,.1);    color:var(--orange); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html">XI</a>
+    <div class="nav__links">
+      <a class="nav__link" href="index.html">Концепция</a>
+      <a class="nav__link" href="design.html">Дизайн-гайдлайн</a>
+      <a class="nav__link active" href="communications.html">Коммуникационные шаблоны</a>
+      <a class="nav__link" href="prompts.html">Промт-гайд</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrapper">
+    <p class="hero__label">Часть III · Матрица коммуникационных шаблонов</p>
+    <div class="hero__xi">XI</div>
+    <p class="hero__subtitle">Коммуникационные шаблоны · Alumni Executive Club</p>
+  </div>
+</section>
+
+<main>
+  <section class="section">
+    <div class="wrapper">
+      <h2>Матрица коммуникационных шаблонов с визуальным нарративом</h2>
+      <p>Матрица связывает каждый тип контента с визуальным образом из системы 4 метафор, примером текста поста и add-on промтом для NanaBanana 2.</p>
+
+      <div class="tbl-wrap" style="margin-top:2rem;">
+        <table>
+          <thead>
+            <tr>
+              <th>Тип контента</th>
+              <th>Визуальный образ</th>
+              <th>Пример текста поста (вариант)</th>
+              <th>Add-on к промту</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Welcome / онбординг</strong></td>
+              <td><span class="image-badge badge-metal">04 Металл</span><br><span style="font-size:.75rem;color:var(--grey-hi);">институциональность, знак как метка принадлежности</span></td>
+              <td class="example-text">«Добро пожаловать в XI. Здесь собираются те, кто строил Россию в цифре — независимо от того, где вы сейчас.»</td>
+              <td><span class="addon-tag">metal_welcome_addon</span></td>
+            </tr>
+            <tr>
+              <td><strong>Анонс мероприятия</strong></td>
+              <td><span class="image-badge badge-icebreaker">01 Ледокол</span><br><span style="font-size:.75rem;color:var(--grey-hi);">клин, направление, флагманское событие</span></td>
+              <td class="example-text">«[Дата]. [Название]. Есть темы, которые имеет смысл обсуждать только среди людей с сопоставимым масштабом решений.»</td>
+              <td><span class="addon-tag">icebreaker_event_addon</span></td>
+            </tr>
+            <tr>
+              <td><strong>Напоминание о событии</strong></td>
+              <td><span class="image-badge badge-icebreaker">01 Ледокол</span><br><span style="font-size:.75rem;color:var(--grey-hi);">усечённый, дата + знак XI</span></td>
+              <td class="example-text">«Сегодня в [время]. [Название]. Разговор о [вопрос] на уровне реальных кейсов.»</td>
+              <td><span class="addon-tag">icebreaker_reminder_addon</span></td>
+            </tr>
+            <tr>
+              <td><strong>Экспертный кейс / разбор</strong></td>
+              <td><span class="image-badge badge-metal">04 Металл</span><br><span style="font-size:.75rem;color:var(--grey-hi);">фактура, надёжность, крупная цифра</span></td>
+              <td class="example-text">«Кейс: [тема]. [Цифра результата]. Что сделали → что сработало → что взять себе.»</td>
+              <td><span class="addon-tag">metal_case_addon</span></td>
+            </tr>
+            <tr>
+              <td><strong>История участника</strong></td>
+              <td><span class="image-badge badge-wires">03 Сети</span><br><span style="font-size:.75rem;color:var(--grey-hi);">узел в топологии, досье, место на карте</span></td>
+              <td class="example-text">«[Имя]. В РТК: [роль]. Сейчас: [где]. «[Цитата]». Может быть полезен в: [темы].»</td>
+              <td><span class="addon-tag">network_member_addon</span></td>
+            </tr>
+            <tr>
+              <td><strong>Отраслевая аналитика</strong></td>
+              <td><span class="image-badge badge-combo">04+03 Металл / Сети</span><br><span style="font-size:.75rem;color:var(--grey-hi);">инфографика, тонкие линии, данные</span></td>
+              <td class="example-text">«[Инсайт]. [2–3 цифры]. Разбираем [дата]: почему это важно для [B2B / B2G / B2C].»</td>
+              <td><span class="addon-tag">metal_analytics_addon</span></td>
+            </tr>
+            <tr>
+              <td><strong>Дайджест клуба</strong></td>
+              <td><span class="image-badge badge-wires">03 Сети</span><br><span style="font-size:.75rem;color:var(--grey-hi);">карта событий, 3–5 связанных точек</span></td>
+              <td class="example-text">«В клубе ближайшее: [1 событие]. [2 событие]. [3 событие]. Ссылки ниже.»</td>
+              <td><span class="addon-tag">network_digest_addon</span></td>
+            </tr>
+            <tr>
+              <td><strong>Карьерный трек</strong></td>
+              <td><span class="image-badge badge-metal">04 Металл</span><br><span style="font-size:.75rem;color:var(--grey-hi);">институциональная карточка роли, без биржи</span></td>
+              <td class="example-text">«Карьерный трек XI. [Роль]. [Блок]. Почему интересно alumni: [1 предложение]. Контакт: [имя].»</td>
+              <td><span class="addon-tag">metal_career_addon</span></td>
+            </tr>
+            <tr>
+              <td><strong>Пост после мероприятия</strong></td>
+              <td><span class="image-badge badge-combo">01+04 Ледокол + Металл</span><br><span style="font-size:.75rem;color:var(--grey-hi);">след прорыва, фиксация результата</span></td>
+              <td class="example-text">«Спасибо всем на [название]. Забираем из разговора: [мысль 1] · [мысль 2] · [мысль 3].»</td>
+              <td><span class="addon-tag">icebreaker_postevent_addon</span></td>
+            </tr>
+            <tr>
+              <td><strong>Welcome лично от куратора</strong></td>
+              <td><span class="image-badge badge-metal">04 Металл</span><br><span style="font-size:.75rem;color:var(--grey-hi);">сдержанный, формальный, личный тон</span></td>
+              <td class="example-text">«Меня зовут [имя]. Курирую XI. В этом месяце фокус: [тема 1], [тема 2].»</td>
+              <td><span class="addon-tag">metal_curator_addon</span></td>
+            </tr>
+            <tr>
+              <td><strong>Эксклюзивный инсайт РТК</strong></td>
+              <td><span class="image-badge badge-metal">04 Металл</span><br><span style="font-size:.75rem;color:var(--grey-hi);">тёмный фон, крупный факт, без иллюстраций</span></td>
+              <td class="example-text">«Внутри клуба. [Заголовок-инсайт]. [Факт]. [Почему важно — 2 предложения].»</td>
+              <td><span class="addon-tag">metal_insight_addon</span></td>
+            </tr>
+            <tr>
+              <td><strong>Сервисное сообщение</strong></td>
+              <td><span class="image-badge badge-wires">03 Сети</span><br><span style="font-size:.75rem;color:var(--grey-hi);">минимальный, структурный, без образности</span></td>
+              <td class="example-text">«Короткое обновление. С [дата] изменилось: [что]. Зачем: [польза]. Шаги: [1–2–3].»</td>
+              <td><span class="addon-tag">network_service_addon</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="divider" style="margin:3rem 0 2rem;"></div>
+
+      <!-- IMAGE LEGEND -->
+      <h3>Легенда визуальных образов</h3>
+      <div class="grid-2" style="margin-top:1.5rem;">
+        <div class="card card-sm">
+          <span class="image-badge badge-icebreaker" style="margin-bottom:.75rem;display:inline-block;">01 Ледокол / Флотилия</span>
+          <p style="margin:0;font-size:.875rem;">Флагманские события. Анонсы. Решения «в ледяной воде». Гражданская инженерная эстетика — не военная.</p>
+        </div>
+        <div class="card card-sm">
+          <span class="image-badge badge-ice" style="margin-bottom:.75rem;display:inline-block;">02 Север / Лёд</span>
+          <p style="margin:0;font-size:.875rem;">Характер системы. Дайджесты с цитатами. Офлайн-носители. Выдержка и дисциплина.</p>
+        </div>
+        <div class="card card-sm">
+          <span class="image-badge badge-wires" style="margin-bottom:.75rem;display:inline-block;">03 Провода / Сети</span>
+          <p style="margin:0;font-size:.875rem;">Нетворкинг. История участника. Досье-карточки. Онбординг. Плотный пучок кабелей — не один провод.</p>
+        </div>
+        <div class="card card-sm">
+          <span class="image-badge badge-metal" style="margin-bottom:.75rem;display:inline-block;">04 Металл / Арматура</span>
+          <p style="margin:0;font-size:.875rem;">Экспертные кейсы. Аналитика. Карьерные посты. Welcome. Матовая сталь — фактура без глянца.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="footer__xi">XI</span>
+    <span class="footer__meta">Alumni Executive Club · Ростелеком<br>Visual Identity Guideline &amp; Prompt Book · v3.0 · Апрель 2026 · Конфиденциально</span>
+  </div>
+</footer>
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <span class="lightbox-close" id="lightbox-close">&#215;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
